@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import './App.css';
+import { Beer } from './Beer.js'
 
 function App() {
   const [beerList, setBeerList] = useState([])
@@ -17,13 +18,7 @@ function App() {
       <div>
         <ul>
           {beerList.map(item => (
-            <li key={item.id}>
-              <article>
-                <img src={item.image_url} ></img>
-                <h1>{item.name}</h1>
-                <p>{item.description}</p>
-              </article>
-            </li>
+            <Beer item={item}></Beer>
           ))
           }
         </ul>

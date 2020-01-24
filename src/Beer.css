@@ -1,0 +1,21 @@
+article {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin: 1em 0;
+    width: 60vw;
+    padding: 1.1em;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px rgba(199,199,199,1);
+}
+
+img {
+    height: auto;
+    width: 50px;
+    margin-right: 20px;
+}
+
+.text-wrapper {
+    padding: 0 2em;
+    text-align: left;
+}
